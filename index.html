@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="content-box">
+        <div class="weather-box">
+            <div class="search-bar">
+                <input type="text" placeholder="Enter a location..." class="search-text" id="searched-location">
+                <button type="button" id="search-btn"><img src="./images/magnifying-glass-svgrepo-com.svg" alt=""></button>
+            </div>
+            
+            <div class="redirecting-section welcome-page">
+                <h1 class="redirecting-text">Please enter a location name</h1>
+            </div>
+            
+            <div class="redirecting-section error-page">
+                <h1 class="redirecting-text">Sorry, couldn't find that location</h1>
+            </div>
+
+            <div class="display-section display-page">
+                <h1 class="city">Weather in Anatartica</h1>
+                <div class="basic-info">
+                    <div class="temp">23°C</div>
+                    <div class="icon-text">
+                        <img src="./images/356.webp" alt="" class="icon">
+                        <h3 class="description">Cloudy with a thunderstorms</h3>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3 class="adjustable real-feel">Real Feel: 28°C</h3>
+                    <h3 class="adjustable precipitation">Precipitation: 3.1 mm</h3>
+                    <h3 class="adjustable humidity">Humidity: 98%</h3>
+                    <h3 class="adjustable cloudy">Cloud Cover: 95%</h3>
+                    <h3 class="adjustable wind-speed">Wind Speed: 3.6 kmph</h3>
+                    <h3 class="adjustable uv">UV Index: 10%</h3>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="./script2.js"></script>
+</body>
+</html>
